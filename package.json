@@ -1,0 +1,37 @@
+{
+  "name": "mastery_blog",
+  "version": "1.0.0",
+  "description": "Node js Matery Personal Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FathurRobb/mastery_blog.git"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "Sequelize",
+    "Express",
+    "MySQL"
+  ],
+  "author": "Ilham Fathur Robbani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FathurRobb/mastery_blog/issues"
+  },
+  "homepage": "https://github.com/FathurRobb/mastery_blog#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.8"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.2"
+  }
+}
