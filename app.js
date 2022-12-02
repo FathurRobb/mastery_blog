@@ -429,14 +429,13 @@ router.get("/posts-like", autoMiddleware, async (req, res) => {
         updatedAt: pl.updatedAt,
         likes: pl.like.length
     }))
-    // const sortData = data.sort((a, b) => (a.likes < b.likes) ? 1 : (a.likes > b.liks) ? -1 : 0)
+    const sortData = data.sort(({likes:a},{likes:b}) => b-a)
     res.json({
-        data: data
+        data: sortData
     })
 });
 
 app.use("/api", express.urlencoded({ extended: false }), router);
-app.use(express.static("assets"));
 
 app.listen(8080, () => {
     console.log("The server is ready to receive the request");
